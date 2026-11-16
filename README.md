@@ -2,7 +2,7 @@
 
 Repository ini mendokumentasikan implementasi lengkap **Tugas 2 Analisis Berbagai Metode Machine Learning dalam Klasifikasi Dataset Tabular**. Studi kasus berfokus pada deteksi **stunting pada balita di Kabupaten Jeneponto, Sulawesi Selatan** menggunakan dataset tabular antropometri (Mendeley Data v4, **40.071 observasi**, periode 2021–2024).
 
-Proyek ini menerapkan standar riset ilmiah yang ketat—mulai dari audit integritas data mentah, rekonstruksi sel Excel yang korup, penghapusan kebocoran target (*target leakage*), hingga pencegahan *data leakage* menggunakan `StratifiedGroupKFold` berdasarkan profil antropometri yang identik.
+Proyek ini menerapkan standar riset ilmiah yang ketat, mulai dari audit integritas data mentah, rekonstruksi sel Excel yang korup, penghapusan kebocoran target (*target leakage*), hingga pencegahan *data leakage* menggunakan `StratifiedGroupKFold` berdasarkan profil antropometri yang identik.
 
 ## 🔍 Hasil Audit Integritas Data & Pra-Pemrosesan (*Data Audit Findings*)
 
@@ -20,15 +20,15 @@ Sebelum dilakukan pelatihan model, serangkaian audit mendalam dan rekayasa data 
 
 ### 1. Perbandingan Pendekatan Kohort
 
-* **Dataset A (Kohort 2024 —** $2$ **Kelas: Stunted vs Normal):** Pendekatan ideal epidemiologis; bebas dari *temporal selection bias*, dilengkapi uji sensitivitas historis pada kohort 2021–2023 (*positive-only cohort*).
+* **Dataset A (Kohort 2024 , ** $2$ **Kelas: Stunted vs Normal):** Pendekatan ideal epidemiologis; bebas dari *temporal selection bias*, dilengkapi uji sensitivitas historis pada kohort 2021–2023 (*positive-only cohort*).
 
-* **Dataset B (Seluruh Data 2021–2024 —** $40.071$ **Observasi):** Pendekatan agregat konvensional untuk menganalisis dampak penggabungan data historis lintas tahun.
+* **Dataset B (Seluruh Data 2021–2024 , ** $40.071$ **Observasi):** Pendekatan agregat konvensional untuk menganalisis dampak penggabungan data historis lintas tahun.
 
 ### 2. Skenario Ablasi Fitur (*Feature Ablation Scenarios*)
 
-* **Skenario 1:** $\text{Age} + \text{Gender} + \text{Weight}$ (Tanpa Tinggi Badan — simulasi posyandu tanpa stadiometer standar).
+* **Skenario 1:** $\text{Age} + \text{Gender} + \text{Weight}$ (Tanpa Tinggi Badan ,  simulasi posyandu tanpa stadiometer standar).
 
-* **Skenario 2:** $\text{Age} + \text{Gender} + \text{Height}$ (Tanpa Berat Badan — fitur primer indikator stunting).
+* **Skenario 2:** $\text{Age} + \text{Gender} + \text{Height}$ (Tanpa Berat Badan ,  fitur primer indikator stunting).
 
 * **Skenario 3:** $\text{Age} + \text{Gender} + \text{Weight} + \text{Height}$ (Antropometri Lengkap).
 
@@ -74,7 +74,7 @@ Tabel di bawah ini merangkum hasil evaluasi performa dari **8 Algoritma Machine 
 
 3. Jalankan sel secara berurutan. Notebook dilengkapi fitur **Fast-Forward Mode (`FAST_FORWARD = True`)** untuk langsung meluncur ke tahap evaluasi dan kurva visualisasi menggunakan artefak terverifikasi.
 
-## 👥 Tim Penyusun — Kelompok 8
+## 👥 Tim Penyusun ,  Kelompok 8
 
 | No. | Nama Lengkap | NIM | 
 | ----- | ----- | ----- | ----- | 
