@@ -1,4 +1,4 @@
-## 📌 Ringkasan Eksekutif (*Executive Summary*)
+## 📌 Summary ya Guys ya
 
 Repository ini mendokumentasikan implementasi lengkap **Tugas 2 Analisis Berbagai Metode Machine Learning dalam Klasifikasi Dataset Tabular**. Studi kasus berfokus pada deteksi **stunting pada balita di Kabupaten Jeneponto, Sulawesi Selatan** menggunakan dataset tabular antropometri (Mendeley Data v4, **40.071 observasi**, periode 2021–2024).
 
